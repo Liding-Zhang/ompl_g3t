@@ -20,7 +20,16 @@ The following dependencies are optional:
 * [Doxygen](http://www.doxygen.org) (needed to create a local copy of the documentation at
   https://ompl.kavrakilab.org/core)
 
-To change the iteration time lagging, replace the following condition in **RandomGeomrtricGraph.cpp**:
+The following dependencies are highly recommend:
+* [Planner Developer Tools (PDT)](https://robotic-esp.com/) (recommended to check the documentation at
+https://robotic-esp.com/papers/gammell_empp22.pdf) (released version)
+* [Moveit!](https://github.com/moveit/moveit) (recommended to check the documentation at
+  https://moveit.ai/) (or Moveit2)
+* [OpenRAVE](https://github.com/rdiankov/openrave) (recommended to check the documentation at
+https://openrave.org/) (released version)
+* [Ompl Benchmark Plotter](https://github.com/aorthey/ompl_benchmark_plotter) (recommended to check the git repos for benchmark) (released version)
+
+To change the iteration time lagging in PDT, replace the following condition in **RandomGeomrtricGraph.cpp**:
 
    *while (newSamples_.size() < numNewStates && !terminationCondition);*
     
