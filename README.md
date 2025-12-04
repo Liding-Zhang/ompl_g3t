@@ -39,12 +39,12 @@ To change the iteration time lagging in PDT, replace the following condition in 
 
 ## Installation of OPENRAVE
 
-install python 2.7
+Install Python 2.7
     
     sudo apt-get update
     sudo apt-get install python2
 
-check default python version
+Check the default Python version
 
     python --version && python3 --version
 Python 2.7 as the default version by creating a symbolic link
@@ -53,17 +53,17 @@ Python 2.7 as the default version by creating a symbolic link
     sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
 
 
-manually select python version 2.7, you can change it back when OPENRAVE installed
+Manually select Python version 2.7; you can change it back when OPENRAVE is installed
 
     sudo update-alternatives --config python
 
 
-install of OPENRAVE repos
+installation of OPENRAVE repos
 
     cd ~
     git clone https://github.com/crigroup/openrave-installation
     cd openrave-insstallation
-install and build OPERAVE in order
+Install and build OPERAVE in order
 
     sudo ./install-dependencies.sh
     sudo ./install-osg.sh
