@@ -20,7 +20,7 @@ The following dependencies are optional:
 * [Doxygen](http://www.doxygen.org) (needed to create a local copy of the documentation at
   https://ompl.kavrakilab.org/core)
 
-The following dependencies are highly recommend:
+The following dependencies are highly recommended:
 * [Planner Developer Tools (PDT)](https://robotic-esp.com/) (recommended to check the documentation at
 https://robotic-esp.com/papers/gammell_empp22.pdf) (released version)
 * [Moveit!](https://github.com/moveit/moveit) (recommended to check the documentation at
@@ -47,7 +47,7 @@ Install Python 2.7
 Check the default Python version
 
     python --version && python3 --version
-Python 2.7 as the default version by creating a symbolic link
+Python 2.7 is the default version by creating a symbolic link
 
     sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1
     sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
@@ -80,7 +80,7 @@ following commands
 You can use macro commands to toggle the code you want to compile
 
     cmake -DCMAKE_BUILD_TYPE=Debug ..
-    make -j 4 # depends on core you are using
+    make -j 4 # depends on the core you are using
 
 install build into /usr/local folder
 
@@ -91,7 +91,7 @@ switch to pdt folder
     cd ../..
     cd pdt/build
     cmake -DPDT_OMPL_DIR=/usr/local -DPDT_OPEN_RAVE=ON ..
-    make -j 4 # depends on core you are using
+    make -j 4 # depends on the core you are using
 
 show OPENRAVE visualization result according to the open_rave_demo config  
 
